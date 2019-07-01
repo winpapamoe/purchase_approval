@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_mail_mail_po_user,mail.mail.po.user,mail.model_mail_mail,purchase.group_purchase_user,1,1,1,1
+access_mail_message_po_user,mail.message.po.user,mail.model_mail_message,purchase.group_purchase_user,1,1,1,1
+access_po_approval_log,po.approval.log,model_po_approval_log,base.group_user,1,1,1,1

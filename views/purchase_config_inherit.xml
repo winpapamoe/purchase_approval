@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_purchase_configuration_inherit" model="ir.ui.view">
+        <field name="name">purchase.res.config.inherit.view</field>
+        <field name="model">purchase.config.settings</field>
+        <field name="inherit_id" ref="purchase.view_purchase_configuration"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='po_double_validation']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//group[2]" position="before">
+                <group string="Approval Processes">
+                    <group>
+                        <field name="manager_approval_max_amount"/>
+                        <field name="accountant_approval_max_amount"/>
+                        <field name="director_approval_min_amount"/>
+                    </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

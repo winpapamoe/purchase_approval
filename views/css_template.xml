@@ -1,0 +1,7 @@
+<odoo>
+<template id="assets_backend" name="po_approval_module assets" inherit_id="web.assets_backend">
+	<xpath expr="." position="inside">
+		<link rel="stylesheet" href="/purchase_approval/static/src/css/button_css.css"/>
+        </xpath>
+</template>
+</odoo>
